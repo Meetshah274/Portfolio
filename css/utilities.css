@@ -1,40 +1,193 @@
-.flex{
-    display:flex;
+/* =========================================
+   UTILITIES.CSS
+   Meet Shah Portfolio
+   ========================================= */
+
+/* ===== FLEXBOX ===== */
+
+.flex {
+    display: flex;
 }
-.items-center{
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
     align-items: center;
 }
-.justify-between{
-    justify-content: space-between;
+
+.items-start {
+    align-items: flex-start;
 }
-.justify-center{
+
+.items-end {
+    align-items: flex-end;
+}
+
+.justify-center {
     justify-content: center;
 }
-.btn-primary{
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+
+/* ===== FLEX SIZING ===== */
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-auto {
+    flex: auto;
+}
+
+.flex-none {
+    flex: none;
+}
+
+
+/* ===== BUTTONS ===== */
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.8rem;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Primary Button */
+
+.btn-primary {
     background: var(--primary);
-    color: var(--secondary) ;
-    border-color: var(--primary);
-
+    color: var(--secondary);
+    border: 1px solid var(--primary);
 }
 
-.btn-primary:hover{
-    background:transparent;
-    border-color: var(--primary);
-    color: var(--primary);
-}
-
-.btn-secondary{
-    background:transparent;
+.btn-primary:hover {
+    background: transparent;
     color: var(--primary);
     border-color: var(--primary);
 }
 
-.btn-secondary:hover{
+
+/* Secondary Button */
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary:hover {
     background: var(--primary);
-    color: var(--secondary) ;
+    color: var(--secondary);
+    border-color: var(--primary);
 }
 
-.flex-1{
-    flex:1;
+
+/* ===== LINKS ===== */
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
 }
 
+
+/* ===== TEXT ALIGNMENT ===== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* ===== WIDTH ===== */
+
+.w-full {
+    width: 100%;
+}
+
+.w-auto {
+    width: auto;
+}
+
+
+/* ===== SPACING ===== */
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+
+/* ===== VISIBILITY ===== */
+
+.hidden {
+    display: none;
+}
+
+
+/* ===== RESPONSIVE UTILITIES ===== */
+
+@media (max-width: 1024px) {
+
+    .desktop-only {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .mobile-column {
+        flex-direction: column;
+    }
+
+    .mobile-center {
+        text-align: center;
+    }
+
+    .mobile-full {
+        width: 100%;
+    }
+
+}
