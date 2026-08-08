@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Shah Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Meet MehulKumar Shah - Information Technology Student, Web Developer and AI Enthusiast">
+    <title>Meet MehulKumar Shah | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,315 +18,638 @@
 <body>
 
     <div class="site-main-wrapper">
-        <button class="hamberger">
+
+        <!-- Mobile Navigation -->
+        <button class="hamberger" aria-label="Open navigation">
             <img src="./images/hamberger.svg" alt="">
         </button>
 
         <div class="mobile-nav">
-            <button class="times"><img src="./images/times.svg" alt=""></button>
+            <button class="times" aria-label="Close navigation">
+                <img src="./images/times.svg" alt="">
+            </button>
             <ul>
                 <li>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#services">Skills</a>
-                    <a href="#Works">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certifications">Certifications</a>
                     <a href="#contact">Contact</a>
-                    <a href="https://github.com/Meetshah274">GithubProfile</a>
+                    <a href="https://github.com/Meetshah274" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
                 </li>
             </ul>
         </div>
+
+        <!-- Header / Hero -->
         <header>
             <div id="home" class="container">
+
                 <nav id="main-nav" class="flex items-center justify-between">
                     <div class="left flex items-center">
                         <div class="branding">
-                            <img src="./images/favicon.ico" alt="" height="30" width="30">
+                            <img src="./images/favicon.ico" alt="Meet Shah logo" height="30" width="30">
                         </div>
 
                         <div>
                             <a href="#home">Home</a>
                             <a href="#about">About</a>
-                            <a href="#services">Skills</a>
-                            <a href="#Works">Projects</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#education">Education</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#projects">Projects</a>
                             <a href="#contact">Contact</a>
                         </div>
-
                     </div>
+
                     <div class="right">
-                        <button class="btn btn-primary" onclick="location.href='https://github.com/Meetshah274'">
-                            Github Profile
+                        <button class="btn btn-primary"
+                            onclick="window.open('https://github.com/Meetshah274', '_blank')">
+                            GitHub Profile
                         </button>
                     </div>
                 </nav>
 
                 <div class="hero flex items-center justify-between">
-                    <div class="left flex-1 flex flex justify-center">
+                    <div class="left flex-1 flex justify-center">
+                        <!-- Add a profile image here if you want:
+                        <img src="./images/profile.jpg" alt="Meet MehulKumar Shah">
+                        -->
                     </div>
-                    <center>
-                    <div class="right flex-1">
-                        
-                        <h1>Meet Shah</h1>
-                        <h6>Web Developer</h6>
-                        <p>I am a passionate Full stack Android and Web Developer . I love coding and developing new
-                            things . I build Android apps and help people to reach out their goals through my apps. Also
-                            I push myself by learning new things and taking up challenges. </p>
-                        
-                        <div>
-                            <button class="btn btn-secondary"
-                                onClick="location.href='https://drive.google.com/file/d/1fU-VM6qgQx2PxK9J4iGN9ev7WYwcudWl/view?usp=sharing'">
-                                Check Resume
-                            </button>
-                        </div>
-</center>
 
+                    <div class="right flex-1">
+                        <center>
+                            <h1>Meet MehulKumar Shah</h1>
+                            <h6>Information Technology Student | Web Developer | AI Enthusiast</h6>
+
+                            <p>
+                                Information Technology Diploma student with practical exposure to Web Development,
+                                Python, C/C++, Java basics, .NET, AI tools and digital design. I am passionate about
+                                Artificial Intelligence, software development, web technologies and creative problem solving.
+                            </p>
+
+                            <div>
+                                <button class="btn btn-secondary"
+                                    onclick="window.open('https://drive.google.com/file/d/1fU-VM6qgQx2PxK9J4iGN9ev7WYwcudWl/view?usp=sharing', '_blank')">
+                                    Check Resume
+                                </button>
+
+                                <button class="btn btn-primary"
+                                    onclick="window.open('https://github.com/Meetshah274', '_blank')">
+                                    View GitHub
+                                </button>
+                            </div>
+                        </center>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </header>
 
+        <!-- About -->
         <section id="about" class="about">
             <div class="container flex items-center about-inner-wrap justify-between">
+
                 <div class="flex-1 left">
-                    <img class="about-me-img" src="./images/programmer.gif" alt="">
+                    <img class="about-me-img" src="./images/programmer.gif" alt="Programming animation">
                 </div>
 
                 <div class="flex-1 right">
-                    <h1>About<span>Me</span></h1>
-                    <h3>
-                        Hello! I'm Meet
-                    </h3>
-                    <p>Hi, Everyone I am a Diploma IT student currently I am studying in ITM (sls) Baroda University. I am a
-                        passionate Full stack Web Developer . I am always ready to have new experiences and
-                        learn new technologies and implement them in my life. I learn new things and help people by
-                        creating impact through my developing skills and by solving their problem. I love coding and
-                        specially Web development.</p>
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello! I'm Meet</h3>
+
+                    <p>
+                        I am an Information Technology Diploma student at ITM (SLS) Baroda University.
+                        I have practical exposure to web development, Python, C/C++, Java basics, .NET,
+                        AI tools and digital design. I enjoy learning new technologies, building useful
+                        projects and solving real-world problems through technology.
+                    </p>
+
+                    <p>
+                        I am currently pursuing an AI internship with Corizo and actively participate in
+                        technical competitions, hackathons and UI/UX events. I am especially interested in
+                        Artificial Intelligence, Web Development, Software Development, UI/UX and Game Development.
+                    </p>
+
                     <div class="social">
-                        <a href="https://github.com/Meetshah274"><img src="./images/github.svg" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61550831866160"><img src="./images/facebook.svg"
-                                alt=""></a>
-                        <a href="https://twitter.com/MeetShah1160711"><img src="./images/twitter.svg" alt=""></a>
-                        <a href="https://www.instagram.com/mdoubleet/"><img src="./images/instagram.svg" alt=""></a>
+                        <a href="https://github.com/Meetshah274" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/github.svg" alt="GitHub">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61550831866160" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://x.com/MeetShah1160711" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/twitter.svg" alt="X / Twitter">
+                        </a>
+                        <a href="https://www.instagram.com/mdoubleet/" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/instagram.svg" alt="Instagram">
+                        </a>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="education" class="education">
+        <!-- Skills -->
+        <section id="skills" class="services">
             <div class="container">
-                <h1 class="section-heading-white">My<span>Education</span></h1>
-                <p>About my education and qualification that I have</p>
-                <div class="flex items-center about-inner-wrap">
-                    <div class="flex-1 left">
-                        <img class="about-me-img" src="./images/book.gif" alt="">
-                    </div>
-                    <div class="flex-1 right timeline_wrapper">
+                <h1 class="section-heading"><span>My</span> Skills</h1>
+                <p>Technical and professional skills from my current learning and project experience.</p>
 
-                        <div class="part2">
-                            <h4 class="h4Heading">
-                                Class X:
-                            </h4>
-                            <p>Currently I have completed a class 10 student from R.E.M school Kalol.I had passed my 10th
-                                Board Exam in GSEB Board from R.E.M School with 63.78% marks in 2024.</p>
-                            <h4 class="h4Heading">
-                                Diploma IT:
-                            </h4>
-                            <p>And now I am doing Diploma IT from ITM (sls) Baroda University.I had passed my 2
-                                sem's over here with 6.47 CGPA in 2024-25 beach</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="services">
-            <div class="container">
-                <h1 class="section-heading"> <span>My</span> Skills</h1>
-                <p>Tools and programming languages that I use for development and making projects</p>
                 <div class="card-wrapper">
-                    <div class="card">
-                        <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter"
-                            width="80" height="80" />
-                        <h2>FLUTTER</h2>
-                        <p>I use this framework for building both Android and IOS app at the same time.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                            alt="html5" width="80" height="80" />
-                        <h2>HTML</h2>
-                        <p>I use this language for creating Websites. </p>
-                    </div>
-                    <div class="card">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                            alt="css3" width="80" height="80" />
-                        <h2>CSS</h2>
-                        <p>I use this language for styling and designing Websites. </p>
-                    </div>
-                    <div class="card">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                            alt="javascript" width="80" height="80" />
-                        <h2>JAVA SCRIPT</h2>
-                        <p>I use this programming language for making websites responsive and build them with full
-                            functionality.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="80"
-                            height="80" />
-                        <h2>GITHUB</h2>
-                        <p>I use this tool for publishing my works and projects in the repository, and also contributing
-                            in open source projects.</p>
-                    </div>
 
                     <div class="card">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-                            alt="python" width="100" height="100" />
+                            alt="Python" width="80" height="80">
                         <h2>PYTHON</h2>
-                        <p>I am learning this programming language and I have also build some projects using this
-                            language.</p>
+                        <p>Programming, automation, AI-related tasks and project development.</p>
                     </div>
+
                     <div class="card">
-                        <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="80"
-                            height="80" />
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+                            alt="C" width="80" height="80">
+                        <h2>C / C++</h2>
+                        <p>Programming fundamentals, problem solving and application development.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                            alt="Java" width="80" height="80">
+                        <h2>JAVA BASICS</h2>
+                        <p>Basic Java programming and object-oriented programming concepts.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                            alt="HTML5" width="80" height="80">
+                        <h2>HTML</h2>
+                        <p>Creating structured and responsive websites.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                            alt="CSS3" width="80" height="80">
+                        <h2>CSS</h2>
+                        <p>Website styling, layouts, responsive design and visual presentation.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" width="80" height="80">
+                        <h2>JAVASCRIPT</h2>
+                        <p>Interactive website functionality and front-end development.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg"
+                            alt=".NET" width="80" height="80">
+                        <h2>.NET BASICS</h2>
+                        <p>Basic understanding of .NET technologies and development.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg"
+                            alt="Canva" width="80" height="80">
+                        <h2>CANVA</h2>
+                        <p>Professional digital design, presentations and visual content creation.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                            alt="Figma" width="80" height="80">
                         <h2>FIGMA</h2>
-                        <p>I use this mostly for making app and website UI/UX design's </p>
+                        <p>UI/UX design, wireframes and user-focused interface design.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+                            alt="GitHub" width="80" height="80">
+                        <h2>GITHUB</h2>
+                        <p>Publishing projects, managing repositories and collaborating on development work.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://www.vectorlogo.zone/logos/microsoft_office/microsoft_office-icon.svg"
+                            alt="MS Office" width="80" height="80">
+                        <h2>MS OFFICE</h2>
+                        <p>Documents, presentations, spreadsheets and general productivity work.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/openai/openai-original.svg"
+                            alt="AI Tools" width="80" height="80">
+                        <h2>AI TOOLS</h2>
+                        <p>Generative AI, AI-assisted development, prompting and technology-based problem solving.</p>
                     </div>
 
                 </div>
 
+                <div class="card-wrapper" style="margin-top: 30px;">
+                    <div class="card">
+                        <h2>PROFESSIONAL SKILLS</h2>
+                        <p>Problem Solving • Teamwork • Creativity • Communication • Presentation</p>
+                    </div>
+                </div>
             </div>
-
         </section>
 
-
-
-        <section id="Works" class="work">
+        <!-- Education -->
+        <section id="education" class="education">
             <div class="container">
-                <h1 class="section-heading-white"><span>My</span>Projects</h1>
-                <p>All my projects in which I had worked and developed are shown below</p>
+                <h1 class="section-heading-white">My <span>Education</span></h1>
+                <p>My current academic qualification and educational background.</p>
+
+                <div class="flex items-center about-inner-wrap">
+                    <div class="flex-1 left">
+                        <img class="about-me-img" src="./images/book.gif" alt="Education animation">
+                    </div>
+
+                    <div class="flex-1 right timeline_wrapper">
+                        <div class="part2">
+
+                            <h4 class="h4Heading">ITM (SLS) Baroda University</h4>
+                            <p>
+                                <strong>Diploma in Information Technology</strong><br>
+                                2024 – 2027
+                            </p>
+
+                            <h4 class="h4Heading">Class X</h4>
+                            <p>
+                                Completed Class 10 from R.E.M School, Kalol, under the GSEB Board.
+                                Passed the 10th Board Examination in 2024 with 63.78%.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="services">
+            <div class="container">
+                <h1 class="section-heading"><span>My</span> Experience</h1>
+                <p>Practical exposure, internships and technical competition experience.</p>
+
+                <div class="card-wrapper">
+
+                    <div class="card">
+                        <h2>AI INTERN • CORIZO</h2>
+                        <h4>Current</h4>
+                        <p>
+                            Working in the Artificial Intelligence domain, gaining practical exposure to
+                            AI concepts and applications, using AI tools for problem solving and developing
+                            practical industry-oriented skills.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h2>2ND PRIZE • INTER-COLLEGE GAME JAM</h2>
+                        <p>
+                            Participated in a competitive Game Jam, worked on game development, prepared a
+                            demo for judging and focused on creativity, gameplay and user engagement.
+                            <strong>Won 2nd Prize.</strong>
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h2>HACKITM • HACKATHON</h2>
+                        <p>
+                            Participated in the HackITM hackathon, developed and presented a technology-based
+                            solution and successfully progressed to the final round. Gained teamwork,
+                            problem-solving, rapid development and presentation experience.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h2>DESIGNATHON • UI/UX HACKATHON</h2>
+                        <p>
+                            Participated in a UI/UX-focused Designathon, designed and presented a user-focused
+                            solution and successfully reached the 2nd Round. Developed UI/UX thinking,
+                            creativity and presentation skills.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="work">
+            <div class="container">
+                <h1 class="section-heading-white"><span>Achievements</span> & Highlights</h1>
+                <p>Major achievements and milestones from my technical journey.</p>
 
                 <div class="card-wrapper-projects">
+
                     <div class="projects_card_odd">
-                        <div class="cardImage_odd"><img src="./images/WhatsApp Image 2025-09-12 at 8.39.35 PM.jpeg" alt="">
+                        <div class="cardTexts_odd">
+                            <h2>🏆 2nd Prize</h2>
+                            <h3>Inter-College Game Jam</h3>
+                            <p>
+                                Secured 2nd Prize for developing an innovative game with engaging gameplay
+                                and a compelling user experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects_card_odd">
+                        <div class="cardTexts_odd">
+                            <h2>🚀 Final Round</h2>
+                            <h3>HackITM Hackathon</h3>
+                            <p>
+                                Reached the final round among top teams by building a scalable and impactful
+                                technology-based solution.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects_card_odd">
+                        <div class="cardTexts_odd">
+                            <h2>🎨 Round 2</h2>
+                            <h3>Designathon — UI/UX Hackathon</h3>
+                            <p>
+                                Qualified for Round 2 by designing intuitive and user-centered UI/UX solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects_card_odd">
+                        <div class="cardTexts_odd">
+                            <h2>🤖 AI Internship</h2>
+                            <h3>Corizo — Artificial Intelligence</h3>
+                            <p>
+                                Completed practical AI internship work at Corizo and developed industry-oriented
+                                Artificial Intelligence skills.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="work">
+            <div class="container">
+                <h1 class="section-heading-white"><span>My</span> Projects</h1>
+                <p>Selected projects I have worked on and developed.</p>
+
+                <div class="card-wrapper-projects">
+
+                    <div class="projects_card_odd">
+                        <div class="cardImage_odd">
+                            <img src="./images/WhatsApp Image 2025-09-12 at 8.39.35 PM.jpeg" alt="The Aviator project">
                         </div>
                         <div class="cardTexts_odd">
                             <h2>TheAviator-master</h2>
-                            <p>It is the game of airplain
-                            </p>
-                            <button class="btn btn-primary" onclick="location.href='https://meetshah274.github.io/TheAviator-master/'">
+                            <p>Airplane-themed game project developed as part of my game development work.</p>
+                            <button class="btn btn-primary"
+                                onclick="window.open('https://meetshah274.github.io/TheAviator-master/', '_blank')">
                                 View Project
                             </button>
                         </div>
                     </div>
+
                     <div class="projects_card_odd">
                         <div class="cardTexts_odd">
                             <h2>TRAVEL</h2>
-                            <p>It is the website for travelers all around the world
-                            </p>
-                            <button class="btn btn-primary" onclick="location.href='https://meetshah274.github.io/TRAVELING/'">
+                            <p>A travel website designed for travelers around the world.</p>
+                            <button class="btn btn-primary"
+                                onclick="window.open('https://meetshah274.github.io/TRAVELING/', '_blank')">
                                 View Project
                             </button>
                         </div>
-                        <div class="cardImage_odd"><img src="./images/WhatsApp Image 2025-09-12 at 9.26.13 PM.jpeg"
-                            alt=""></div>
+                        <div class="cardImage_odd">
+                            <img src="./images/WhatsApp Image 2025-09-12 at 9.26.13 PM.jpeg" alt="Travel website">
+                        </div>
                     </div>
+
                     <div class="projects_card_odd">
-                        <div class="cardImage_odd"><img src="./images/Animated Cube _ @coding.stella - Google Chrome 2025-09-14 20-57-20.gif"
-                                alt=""></div>
+                        <div class="cardImage_odd">
+                            <img src="./images/Animated Cube _ @coding.stella - Google Chrome 2025-09-14 20-57-20.gif"
+                                alt="Rubik's Cube project">
+                        </div>
                         <div class="cardTexts_odd">
-                            <h2>Rubiks Cube</h2>
-                            <p>It a Rubix Cube game
-                            </p>
-                            <button class="btn btn-primary" onclick="location.href='https://meetshah274.github.io/Rubiks-Cube/'">
+                            <h2>Rubik's Cube</h2>
+                            <p>Interactive Rubik's Cube game project.</p>
+                            <button class="btn btn-primary"
+                                onclick="window.open('https://meetshah274.github.io/Rubiks-Cube/', '_blank')">
                                 View Project
                             </button>
                         </div>
                     </div>
 
-                   <!-- <div class="projects_card_odd">
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="services">
+            <div class="container">
+                <h1 class="section-heading"><span>My</span> Certifications</h1>
+                <p>Certifications and technical credentials included in my resume.</p>
+
+                <div class="card-wrapper">
+
+                    <div class="card">
+                        <h2>STAR CERTIFICATION</h2>
+                        <p>Star Certification</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>C PROGRAMMING</h2>
+                        <p>Star Certification – C Programming</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>C++</h2>
+                        <p>Star Certification – C++</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>IT – ESSENTIAL</h2>
+                        <p>Star Certification – IT Essential</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>SCSU</h2>
+                        <p>Star Cyber Secure User – SCSU</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Job Simulations -->
+        <section class="work">
+            <div class="container">
+                <h1 class="section-heading-white">Industry <span>Experience</span></h1>
+                <p>Job simulations and virtual experience programs — not employment.</p>
+
+                <div class="card-wrapper-projects">
+
+                    <div class="projects_card_odd">
                         <div class="cardTexts_odd">
-                            <h2>Face Recognition</h2>
-                            <p>fguidghfisdgfidygfduyfg hfgdsi fgduyhfi yudyfgduy fsudygfu ysfduiygusdfhdhdfjdjggjgjgd
+                            <h2>Software Engineering</h2>
+                            <p>
+                                • Skyscanner — Software Engineering<br>
+                                • Walmart Global Tech — Advanced Software Engineering<br>
+                                • Commonwealth Bank — Software Engineering<br>
+                                • Quantium — Software Engineering<br>
+                                • JPMorgan Chase & Co. — Software Engineering
                             </p>
-                            <button class="btn btn-primary" onclick="location.href='https://github.com/rishavchanda'">
-                                View Code
-                            </button>
                         </div>
-                        <div class="cardImage_odd"><img src="https://miro.medium.com/max/1280/1*zCKH606XA7hdS86l0ApN8A.gif"
-                            alt=""></div>
-                    </div> -->
+                    </div>
 
+                    <div class="projects_card_odd">
+                        <div class="cardTexts_odd">
+                            <h2>AI / Generative AI</h2>
+                            <p>
+                                • BCG X — GenAI<br>
+                                • Datacom — Partnering with AI in the Workplace<br>
+                                • Visa — AI in Action<br>
+                                • Datacom — Automation AI Accelerator<br>
+                                • EAB — GenAI for Proposal Generation<br>
+                                • DLA Piper — Mergers and Acquisitions for AI Innovation
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects_card_odd">
+                        <div class="cardTexts_odd">
+                            <h2>Data / Analytics</h2>
+                            <p>
+                                • BCG X — Data Science<br>
+                                • Deloitte — Data Analytics<br>
+                                • Tata — Data Visualisation<br>
+                                • Forage — Data Labeling
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects_card_odd">
+                        <div class="cardTexts_odd">
+                            <h2>Cybersecurity / Technology</h2>
+                            <p>
+                                • Tata — Cybersecurity Analyst<br>
+                                • Deloitte — Cyber<br>
+                                • Deloitte — Technology<br>
+                                • AWS — Solutions Architecture
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects_card_odd">
+                        <div class="cardTexts_odd">
+                            <h2>Other</h2>
+                            <p>• Red Bull — Red Bull Role Match Quiz</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
+        </section>
 
-    </div>
-    </section> 
+        <!-- Languages & Interests -->
+        <section class="services">
+            <div class="container">
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h1 class="section-heading">Contact<span>Me</span></h1>
-            <p>My contact details are given below you can also follow me</p>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./images/phone.svg" alt="" height="100px" width="100px">
-                    <h2>Call Me On</h2>
-                    <h6>9510189034</h6>
+                <h1 class="section-heading"><span>Languages</span> & Interests</h1>
+
+                <div class="card-wrapper">
+
+                    <div class="card">
+                        <h2>LANGUAGES</h2>
+                        <p>English • Hindi • Gujarati</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>INTERESTS</h2>
+                        <p>
+                            Artificial Intelligence • Web Development • Software Development •
+                            UI/UX • Game Development • Emerging Technologies
+                        </p>
+                    </div>
+
                 </div>
+            </div>
+        </section>
 
-                <div class="card">
-                    <img src="./images/gmail.svg" alt="" height="100px" width="100px">
-                    <h2>Email Me At</h2>
-                    <h6>smeet2880@gmail.com</h6>
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact <span>Me</span></h1>
+                <p>My contact details are given below. You can also follow me on social media.</p>
+
+                <div class="card-wrapper">
+
+                    <div class="card">
+                        <img src="./images/phone.svg" alt="Phone" height="100" width="100">
+                        <h2>Call Me On</h2>
+                        <h6>
+                            <a href="tel:+919510189034">9510189034</a><br>
+                            <a href="tel:+919427720563">9427720563</a>
+                        </h6>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/gmail.svg" alt="Email" height="100" width="100">
+                        <h2>Email Me At</h2>
+                        <h6>
+                            <a href="mailto:smeet2880@gmail.com">smeet2880@gmail.com</a><br>
+                            <a href="mailto:meet.shah@itmbu.ac.in">meet.shah@itmbu.ac.in</a>
+                        </h6>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/office.svg" alt="Location" height="100" width="100">
+                        <h2>Location</h2>
+                        <h6>
+                            Derol Station Road, Near Katha Mill,<br>
+                            Kalol, Panchmahal, Gujarat - 389330
+                        </h6>
+                    </div>
+
                 </div>
+            </div>
+        </section>
 
+        <!-- Footer -->
+        <footer>
+            <h1 class="section-heading-white">Follow <span>Me</span></h1>
 
-                <div class="card">
-                    <img src="./images/office.svg" alt="" height="100px" width="100px">
-                    <h2>Visit Me At</h2>
-                    <h6>Derol station road near katha mill , kalol , panchmahal , gujrat -389330</h6>
-                </div>
+            <div class="footer-socials">
+
+                <a href="https://github.com/Meetshah274" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/github.svg" alt="GitHub" height="50" width="50">
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=61550831866160" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/facebook.svg" alt="Facebook" height="50" width="50">
+                </a>
+
+                <a href="https://x.com/MeetShah1160711" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter.svg" alt="X / Twitter" height="50" width="50">
+                </a>
+
+                <a href="https://www.instagram.com/mdoubleet/" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/instagram.svg" alt="Instagram" height="50" width="50">
+                </a>
 
             </div>
 
-        </div>
-    </section>
+            <div class="copyright">
+                © Designed by Meet Shah. All Rights Reserved.
+            </div>
+        </footer>
 
-    <footer>
-        <h1 class="section-heading-white">Follow<span>Me</span></h1>
-        <div class="footer-socials">
-            <a href="https://github.com/Meetshah274"><img src="./images/github.svg" alt="" height="50px"
-                    width="50px"></a>
-            <a href="https://www.facebook.com/profile.php?id=61550831866160"><img src="./images/facebook.svg" alt="" height="50px"
-                    width="50px"></a>
-            <a href="https://x.com/MeetShah1160711"><img src="./images/twitter.svg" alt="" height="50px"
-                    width="50px"></a>
-            <a href="https://www.instagram.com/mdoubleet/"><img src="./images/instagram.svg" alt="" height="50px"
-                    width="50px"></a>
-                    
-
-        </div>
-
-        <div class="copyright">
-            © Designed by Meet Shah.All Right Reserved.
-        </div>
-    </footer>
     </div>
+
     <script src="./js/app.js"></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
